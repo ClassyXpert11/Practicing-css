@@ -1,0 +1,46 @@
+/* This but just makes it so that the dropdown menu doesn't appear
+    when you hover on the same line as it. remember divs always take up the
+    entire width */
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: #c4c4c4;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* display none so that it doesn't show up 
+    when we're not hovering over it */
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: #c7c7c7;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #000000c1;
+}
+
+/* now when we hover over it, it should show up */
+.dropdown:hover .content{
+    display: block;
+}
+
+/* just changes the colour of the button when
+    we are hovering over it */
+.dropdown:hover button {
+    background-color: #9f9f9f;
+}
+
+.dropdown a:hover {
+    background-color: #989898;
+}

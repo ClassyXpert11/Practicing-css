@@ -1,0 +1,74 @@
+/* Will change the first letter of the word */
+h1::first-letter { 
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* Will change the first line of the paragraph no matter how big or small the window is */
+p::first-line {
+    background-color: #e3ff85;
+}
+
+/* Will change the colours of whatever the mouse has highlighted */
+p::selection {
+    color: #4cff46;
+    background-color: #373737;
+}
+
+/* Will apply something before that specific element */
+#fruit li::before {
+    content: "💀";
+}
+
+/* Will apply something after that element */
+#apple::after {
+    content: "🍎";
+}
+
+#orange::after {
+    content: "🍊";
+}
+
+#banana::after {
+    content: "🍌";
+}
+
+/* Since we made a list, there were bullet points before out items.
+    using the ::marker pseudo element we can get rid of it and put the tick instead */
+#fruit li::marker {
+    content: "✔️";
+    color: #65ff5d;
+    font-size: 1.2em;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.btnSpidey {
+    background-color: #ff1a1a;
+    color: #fff;
+    border: 3px solid #000;
+    padding: 10px;
+    margin: 10px 500px;
+    z-index: 1;
+}
+
+.btnSpidey::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #04ff00;
+    z-index: -1;
+
+    transition: transform 300ms ease-in-out;
+    transform: scale(0);
+    transform-origin: left;
+}
+
+.btnSpidey:hover::before, .btnSpidey:focus::before {
+    transform: scale(1);
+}

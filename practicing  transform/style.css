@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+
+    transform: translateX(100px) rotateZ(45deg) scale(0.5);
+}
+
+
+/* you can also tranform images if you want. my pic is too big lmao */
+.img {
+    transform: translateX(50px) rotateZ(180deg) scaleX(2);
+}
+
+/*      
+    ----------------------------------------------------------------------------------------------------------------
+        translateX() just moves it on the x axis.
+        negative number will move it to the left.
+        you can also use percentages %.
+        
+        translateY() moves the element on the y axis.
+        negative numbers will move it upwards.
+        you can also use percentages
+        
+        you can even do both in one go by just using translate().
+        it will need two values inside of it though.
+        
+        translate(50px, 50px)
+
+    ----------------------------------------------------------------------------------------------------------------
+    
+    rotateX() rotates the item on the x axis. kind of towards you if that makes sense.
+    to use it you need to type 45deg, 90deg etc.
+    
+    rotateY() rotates items on its y axis. towards the right of you.
+    same thing as X to use it.
+    
+    rotateZ() rotates items on the z axis. spin around basically lol.
+    --deg is also needed here!
+    ----------------------------------------------------------------------------------------------------------------
+    
+    scaleX() and scaleY() scales items on their according axes. 
+    to use them you just put in numbers and not px or %.
+    by defualt items are 1 meaning 100%.
+    anything below 1 allows you to shrink items
+    scale() allows you to do both axes in one but also needs two values - scale(x, y)    
+    ----------------------------------------------------------------------------------------------------------------
+    
+    skewX() and skewY() exist and they... skew items on their according axes i guess??
+    you can also use skew() to do both axes in one - skew(x, y)
+    ----------------------------------------------------------------------------------------------------------------
+
+    you can also use more than one of these in the transform bit e.g.
+        transform: translateX(100%) rotateZ(90deg) scale(0.5);
+
+*/
+
+
+#box1 {
+    background-color: #4bff66;    
+}
+
+#box2 {
+    background-color: #ff4b4b;    
+}
+
+#box3 {
+    background-color: #4b75ff;    
+}

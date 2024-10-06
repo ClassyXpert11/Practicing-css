@@ -1,0 +1,90 @@
+body {
+    background-color: #424242;
+}
+
+#box {
+    width: 250px;
+    height: 250px;
+    background-color: #ff0000;
+    font-size: 13em;
+    text-align: center;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(.94,-0.38,.18,1.33);
+}
+
+.img {
+    animation-name: rotate, fade, shrink;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+/* #box:hover {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+} */
+
+/* @keyframs variableNameGoesHere {
+    from{} will make the element move back into its original place
+    to{} will make it move FROM its original place TO somewhere else 
+
+    % will make it the animation do it thing until that percentage.
+    e.g. 50%{transform: rotateZ(360deg);} will tell it to do the rotation in 50% of the duration time and back.
+    you can change the percentage however you want.
+
+    animation-direction: alternate; will let the animation complete then do the opposite of that animation over and over again. e.g. slide left to right
+
+    cubic-bezier() is something from the f12 thingy in the browser (firefox).
+    you can get it by clicking on the thing thats animating (i think it does need ease-in-out in the animation-timing-function) then adjust how you want then copy and paste into code
+} */
+@keyframes slideLeft {
+    from{transform: translateX(300%);}
+}
+
+@keyframes slideRight {
+    to{transform: translateX(300%);}
+}
+
+@keyframes slideUp {
+    from{transform: translateY(300%);}
+}
+
+@keyframes slideDown {
+    to{transform: translateY(300%);}
+}
+
+@keyframes rotate {
+    25%{transform: rotateZ(360deg);}
+}
+
+@keyframes grow {
+    50%{transform: scale(2, 2);}
+}
+
+@keyframes shrink {
+    50%{transform: scale(0.5, 0.5);}
+}
+
+@keyframes fade {
+    50%{opacity: 0;}
+}
+
+@keyframes colourChange {
+    0%{background-color: #ff0000;}
+    20%{background-color: #ff9500;}
+    40%{background-color: #eeff00;}
+    60%{background-color: #22ff00;}
+    80%{background-color: #0026ff;}
+    100%{background-color: #ee00ff;}
+}
+
+@keyframes glow {
+    50%{box-shadow: 0px 0px 50px #ffff00;}
+}

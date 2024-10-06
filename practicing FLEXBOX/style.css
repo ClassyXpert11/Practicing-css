@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    border: 10px solid #000;
+    height: 90vh;
+    align-items: flex-start;
+}
+
+/*
+
+    ----------------------------------------------------------------------------------------------------------------
+    the flex direction is automatically set to row.
+    row reverse is just row but in backwards order e.g. instead of 1,2,3,4 it will be 4,3,2,1 
+    column just puts it into columns
+    column reverse put it into columns but in reverse order similar to the other one 
+
+    flex-direction: column; 
+    flex-direction: column-reverse; 
+    flex-direction: row; 
+    flex-direction: row-reverse; 
+    ----------------------------------------------------------------------------------------------------------------
+    justify content just moves stuff around on the x-axis.
+    flex-start is what it is automatically set to (left side)
+    flex-end will put the stuff at the other side (right side)
+    center will obviously center it in the x-axis
+    space-between will put and equal amount of space between the elements excluding the left and right walls next to them
+    space_around this does same as above but DOES include the walls
+    space-evenly does the same as above againg but does it... evenly?
+
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    ----------------------------------------------------------------------------------------------------------------
+    align-items literally does and has the same things as justify-content but on the y axis
+
+    flex-start is what it is automatically set to (top side)
+    flex-end will put the stuff at the other side (bottom side)
+    center will obviously center it in the x-axis
+    baseline just aligns the items in the element with other items in their elements but not the element itself. basically try it with font size. it will align the font no matter how big or small but not the element itself.
+
+
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+    ----------------------------------------------------------------------------------------------------------------
+    flew-wrap just wraps elements up and moves them up or down depending on what you choose. 
+    
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-wrap: nowrap;
+    ----------------------------------------------------------------------------------------------------------------
+    align-content is the same as align items but is usually used in conjuction with flex-wrap. it essentially removes the space between them and gets rid of those gaps
+    
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+    ----------------------------------------------------------------------------------------------------------------
+    flex gaps exist! can put gaps between columns and rows
+    
+    column-gap: 1em;
+    row-gap: 1em;
+    ----------------------------------------------------------------------------------------------------------------
+    align-self can move one element around. try putting them in one of your box element IDs
+    
+    align-self: start;
+    align-self: center;
+    align-self: end;
+    ----------------------------------------------------------------------------------------------------------------
+    you can change the order of stuff using order. negative number will put it at the start (left to right) and vice versa the other way.
+
+    order: 1;
+    order: -1;
+    ----------------------------------------------------------------------------------------------------------------
+*/
+
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1 {
+    background-color: #ff3a3a;
+}
+
+#box2 {
+    background-color: #e8ff3a;
+}
+
+#box3 {
+    background-color: #3aff54;
+}
+
+#box4 {
+    background-color: #3a7cff;
+}

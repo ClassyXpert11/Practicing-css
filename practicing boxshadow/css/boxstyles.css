@@ -1,0 +1,23 @@
+.box {
+    background-color: grey;
+    font-size: 5em;
+    height: 200px;
+    width: 400px;
+    margin: 50px auto;
+    transition: 0.3s ease-in-out;
+}
+
+/* 
+1. horizontal 
+2. vertical
+3. blur
+4. spread (how big you want your shadow to be)
+ */
+.box:hover {
+    box-shadow: 9px 9px 8px 20px #0003bb;
+}
+
+body {
+    background-color: #560000;
+}
+

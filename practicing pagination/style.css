@@ -1,0 +1,24 @@
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+/* within the pagination class, within any anchor tags, find the class thats active */
+.pagination a.active {
+    background-color: #008080;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+/* find the pagination class, with "a" tags that we can hover 
+    over that DO NOT have the "active" class name */
+.pagination a:hover:not(.active) {
+    background-color: #ababab;
+    border-radius: 10px;
+}
